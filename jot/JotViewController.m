@@ -326,7 +326,7 @@ NSString const* kDate = @"Date";
     UIImage *drawImage = [self.drawView drawOnImage];
     return [self.textView drawTextOnImage:drawImage
                           withScaledFrame:[self.imageView frameForImage]
-                              scaleFactor:[self.imageView scaleFactorForImage]];
+                              scaleFactor:0];
 }
 
 #pragma mark - Gestures
