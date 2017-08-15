@@ -328,9 +328,7 @@ NSString const* kUndoArray = @"UndoArray";
     
     UIImage *drawnImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    return [UIImage imageWithCGImage:drawnImage.CGImage
-                               scale:0.f
-                         orientation:drawnImage.imageOrientation];
+    return drawnImage;
 }
 
 - (void)drawAllPaths

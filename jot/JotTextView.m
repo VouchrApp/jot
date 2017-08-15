@@ -301,8 +301,7 @@
 	if (backgroundImage) {
 		CGRect maxRect = CGRectUnion(self.bounds, CGRectMake(0, 0, backgroundImage.size.width, backgroundImage.size.height));
 		size = maxRect.size;
-	}
-	else {
+	} else {
 		size = self.bounds.size;
 	}
     UIGraphicsBeginImageContextWithOptions(size, NO, 0);
